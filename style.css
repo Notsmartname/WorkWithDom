@@ -1,0 +1,106 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+li {
+    list-style: none;
+}
+
+body {
+    display: flex;
+    padding: 40px;
+    transition: all 0.5s;
+}
+
+.menu {
+    position: relative;
+    height: 400px;
+    margin-right: 100px;
+}
+
+.box__list {
+    height: 220px;
+    width: 65px;
+    box-shadow: rgba(0, 0, 0, 0.99) 0px 5px 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background: white;
+    border-radius: 5px;
+}
+
+.box__list div {
+    height: 35px;
+    width: 35px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: black;
+    border-image: initial;
+    border-radius: 5px;
+}
+
+
+.box__red {
+    background-color: red;
+}
+
+.box__yellow {
+    background-color: yellow;
+}
+
+.box__powderblue {
+    background-color: powderblue;
+}
+
+.box__black {
+    background-color: black;
+}
+
+.box__reset {
+    position: relative;
+}
+
+.box__reset .cross {
+    cursor: pointer;
+    position: absolute;
+    top: 15px;
+    left: 12px;
+}
+
+.box__reset .cross::before, .box__reset .cross::after {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 2px;
+    background: black;
+}
+
+.box__reset .cross::after {
+    transform: rotate(-45deg);
+}
+
+.box__reset .cross::before {
+    transform: rotate(45deg);
+}
+
+.list__items {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-row-gap: 2em;
+    grid-column-gap: 3em;
+}
+
+.item {
+    height: 200px;
+    width: 200px;
+    transition: all 0.8s ease 0s;
+    background: none;
+    border-radius: 10px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: black;
+    border-image: initial;
+}
